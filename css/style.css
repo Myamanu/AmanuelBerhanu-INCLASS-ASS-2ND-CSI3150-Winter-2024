@@ -1,0 +1,96 @@
+/* Import font styling from google fonts - src: fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+body {
+  color: wheat;
+  background-color: wheat;
+  padding: 1.5rem;
+}
+
+.info-box .header-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(50, 50, 201);
+}
+
+#header1{
+  margin-left: 12%;
+  margin-bottom: 5%;
+}
+
+.infobar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 25%;
+    
+}
+
+.infobar.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.infobar .content button{
+    width: 60%;
+    color: #f0f1f2;
+    background-color: #66b8f6;
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10%;
+
+}
+
+.infobar .content img{
+     width: 350px;
+     height: 350px;
+}
+
+/* Initially hide all content */
+.infobar .content {
+    display: none;
+}
+
+.info-box .button-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1vh;
+    margin-left: 7%;
+    margin-right: 13%;
+    margin-bottom: 2%;
+    border: 1px solid rgba(230, 227, 227, 0.5);
+    border-radius: 0 0.4rem 0.4rem 0;   
+}
+
+.button-form button{
+   width: 150px;
+   height: 45px;
+   font-size: xx-large;
+   cursor: pointer;
+   margin-top: 1000px;
+}
+

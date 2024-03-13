@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The ABCs of CSS Technology</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+  </head>
+
+  <body>
+     <div class="info-box">
+        <div class="header-info">
+            <a href="#">
+            <h1 id="header1">Welcome to the Interactive ABCs of CSS Technology learning Website</h1>
+            <h1 id="header2">Click on the buttons below to reveal and learn the CSS technology features of the corresponding letters </h1>
+            </a>
+        </div>
+        <div class="button-form"></section>
+            <button onclick="toggleContent('A')">A</button>
+            <button onclick="toggleContent('B')">B</button>
+            <button onclick="toggleContent('C')">C</button>
+        </div>
+        
+        <div class="infobar"></nav>
+            <div id="A" class="content">
+                <img src="./assets/image/css-letter-a.png" alt="Image of A">
+                <button onclick="toggleContent('A')">Hide Result</button>
+            </div>
+
+            <div id="B" class="content">
+                <img src="./assets/image/css-letter-b.png" alt="Image of B">
+                <button onclick="toggleContent('B')">Hide Result</button>
+            </div>
+
+            <div id="C" class="content">
+                <img src="./assets/image/css-letter-c.png" alt="Image of C">
+                <button onclick="toggleContent('C')">Hide Result</button>
+            </div>
+        </div>
+        
+    </div>
+    <!--js-->
+    <script>
+        function toggleContent(letter) {
+            var content = document.getElementById(letter);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+  </body>
+</html>
